@@ -82,7 +82,6 @@
 
 #header>div~div {
     grid-column: 2 / 3;
-    background-color: black;
 }
 
 #svg-search {
@@ -118,6 +117,7 @@
     grid-template-rows: 1fr 2fr;
     column-gap: 20px;
     align-items: center;
+    padding-left: 48px;
 }
 
 #user-greeting>span~span {
