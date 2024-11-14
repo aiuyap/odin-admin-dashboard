@@ -84,6 +84,29 @@
     grid-column: 2 / 3;
 }
 
+#header-right>div~div {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(170, 168, 168, 0.3);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+}
+
 #svg-search {
     width: 1.5rem;
     justify-self: right;
@@ -104,6 +127,10 @@
     outline: none;
     border: none;
     background-color: rgba(170, 168, 168, 0.3);
+}
+
+#input-search:focus {
+    border: 1px solid var(--blue);
 }
 
 #user-photo {
@@ -136,6 +163,6 @@
 #main-content {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
-    background-color: whitesmoke;
+    background-color: rgba(170, 168, 168, 0.3);
 }
 
