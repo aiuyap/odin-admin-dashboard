@@ -14,7 +14,7 @@
 #container {
     display: grid;
     grid-template-columns: 250px 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr;
+    grid-template-rows: 170px 1fr 1fr;
     height: 100vh;
 }
 
@@ -69,6 +69,8 @@
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 1000px 1fr;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 5px gray;
 }
 
 #header>div {
@@ -138,6 +140,12 @@ button:hover {
     grid-row: span 2;
 }
 
+.user-photo {
+    width: 3rem;
+    background-color: black;
+    border-radius: 17px;
+}
+
 #user-greeting {
     display: grid;
     grid-template-columns: 3rem 1fr;
@@ -160,9 +168,81 @@ button:hover {
     align-self: end;
 }
 
+#svg-notification {
+    width: 1.5rem;
+}
+
+#notification-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    align-content: end;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    align-self: end;
+    font-weight: 700;
+}
+
 #main-content {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     background-color: rgba(170, 168, 168, 0.3);
+    display: grid;
+    grid-template-columns: 1100px 1fr;
+    grid-template-rows: 60px 1fr;
+    gap: 5px;
 }
 
+h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    align-self: end;
+    padding-left: 1rem;
+}
+
+#main-content-header {
+    display: flex;
+}
+
+#announcements-header {
+    display: flex;
+}
+
+#projects {
+    /* background-color: aqua; */
+}
+
+.cards {
+    height: 230px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray;
+    padding: 1rem 2rem;
+    display: grid;
+    border-left: 7px solid rgb(179, 179, 3);
+}
+
+.proj-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.icons {
+    justify-self: right;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 1.5rem;
+}
+
+.svg-icons {
+    width: 1.6rem;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-self: end;
+}
