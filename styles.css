@@ -28,16 +28,41 @@
     display: grid;
     grid-template-columns: 80px 1fr;
     font-size: 1.2rem;
+    font-weight: 700;
     justify-content: center;
     justify-items: left;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    row-gap: 0;
 }
 
-.svg-icon-db {
+.links {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    justify-items: left;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.svg-icon-db,
+.svg-icon-links {
     width: 2rem;
     fill: white;
     justify-self: right;
+}
+
+.svg-icon-links {
+    width: 1.5rem;
+    padding-right: 5px;
 }
 
 #header {
