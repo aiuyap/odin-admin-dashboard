@@ -67,6 +67,47 @@
 
 #header {
     grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 1000px 1fr;
+}
+
+#header>div {
+    grid-column: 1 / 2;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+#header>div~div {
+    grid-column: 2 / 3;
+    background-color: black;
+}
+
+#svg-search {
+    width: 1.5rem;
+    justify-self: right;
+    align-self: center;
+}
+
+#div-search {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+#input-search {
+    width: 750px;
+    margin-left: 15px;
+    border-radius: 15px;
+    padding: 9px 15px;
+    outline: none;
+    border: none;
+    background-color: rgba(170, 168, 168, 0.3);
+}
+
+#user-greeting {
+    width: 100%;
 }
 
 #main-content {
