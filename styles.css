@@ -194,11 +194,15 @@ button:hover {
     gap: 5px;
 }
 
+#profile-name {
+    font-size: 1.2rem;
+}
+
 h1 {
     font-size: 1.3rem;
     font-weight: 500;
     align-self: end;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 #main-content-header {
@@ -210,18 +214,22 @@ h1 {
 }
 
 #projects {
-    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 20px;
 }
 
 .cards {
-    height: 230px;
-    width: 350px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 5px gray;
     padding: 1rem 2rem;
     display: grid;
-    border-left: 7px solid rgb(179, 179, 3);
+    border-left: 7px solid rgb(219, 219, 11);
 }
 
 .proj-text {
